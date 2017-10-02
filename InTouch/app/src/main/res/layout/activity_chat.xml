@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="@drawable/bg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.gyan.intouch.activities.ChatActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/chatapp_bar"/>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/chat_recycler"
+        android:layout_below="@+id/chatapp_bar"
+        android:layout_above="@+id/linearLayout3">
+
+    </android.support.v7.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_margin="4dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout3">
+
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_marginRight="4dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/ic_chat_camera"/>
+
+        <EditText
+            android:id="@+id/chat_messege"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="@drawable/hero_button"
+            android:ems="10"
+            android:hint="Type a messege..."
+            android:inputType="textMultiLine"
+            android:padding="5dp" />
+        <ImageButton
+            android:layout_width="40dp"
+            android:layout_height="match_parent"
+            android:onClick="sendMessege"
+            android:layout_marginLeft="4dp"
+            android:background="@drawable/ic_chat_send"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:id="@+id/custom_chat_header"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:background="@color/colorPrimary"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/chat_user_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif-condensed"
+        android:text="Gyan's chat"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+    <TextView
+        android:id="@+id/chat_user_lastseen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="15sp"
+        android:text="Today at 16:00"
+        android:layout_below="@+id/chat_user_name"
+        android:layout_alignParentStart="true" />
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="40dp"
+        android:id="@+id/chat_user_pic"
+        android:src="@drawable/defaultpic"
+        android:layout_height="40dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="5dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true" />
+
+</RelativeLayout>

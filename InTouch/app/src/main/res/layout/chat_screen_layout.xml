@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_margin="5dp"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/mainChatHolder"
+        android:orientation="horizontal">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:id="@+id/mainMessegeHolder"
+            android:layout_height="wrap_content"
+            android:background="@drawable/chatmessege_bg"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/messegeuser_msg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="9dp"
+                android:text="hellobabu kysa hai"
+                android:textColor="@color/white"
+                android:textSize="15sp"
+                android:textStyle="bold" >
+            </TextView>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/messegeuser_lastseen"
+                android:text="1 sec ago"
+                android:layout_marginTop="5dp"
+                android:layout_marginRight="5dp"
+                android:textSize="10dp" />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+</LinearLayout>

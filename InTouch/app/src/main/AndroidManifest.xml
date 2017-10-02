@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.gyan.intouch">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:name=".models.StartupStorage"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <service
+            android:name=".models.CurrentMessegingService"
+            android:stopWithTask="false">
+            <intent-filter>
+                <action android:name="com.google.firebase.MESSAGING_EVENT" />
+            </intent-filter>
+        </service>
+
+        <activity android:name=".activities.WelcomeActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.MainActivity" />
+        <activity android:name=".activities.startPageActivity" />
+        <activity
+            android:name=".activities.LoginActivity"
+            android:parentActivityName=".activities.startPageActivity" />
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:parentActivityName=".activities.startPageActivity" />
+        <activity
+            android:name=".activities.AccountSettingActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name=".activities.StatusChangeActivity"
+            android:parentActivityName=".activities.AccountSettingActivity" />
+        <activity
+            android:name=".activities.AllUsersActivity"
+            android:parentActivityName=".activities.MainActivity" />
+        <activity
+            android:name=".activities.ProfileActivity"
+            android:parentActivityName=".activities.AllUsersActivity">
+            <intent-filter>
+                <action android:name="com.example.gyan.intouch_TARGET_NOTIFICATION" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".activities.ChatActivity"
+            android:parentActivityName=".activities.MainActivity"></activity>
+    </application>
+
+</manifest>

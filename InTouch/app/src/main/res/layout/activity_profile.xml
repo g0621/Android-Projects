@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/startactivity_bg"
+    tools:context="com.example.gyan.intouch.activities.ProfileActivity">
+
+    <include layout="@layout/app_bar_layout"
+        android:id="@+id/profilePage_appbar"/>
+    
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:id="@+id/profileShowPic"
+        android:src="@drawable/defaultpic"
+        android:layout_below="@+id/profilePage_appbar"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="40dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:orientation="vertical"
+        android:layout_below="@+id/profileShowPic"
+        android:layout_alignParentStart="true"
+        android:id="@+id/linearLayout2">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileUserName"
+            android:fontFamily="casual"
+            android:text="User Name"
+            android:textAlignment="center"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/profileUserStatus"
+            android:paddingLeft="3dp"
+            android:paddingRight="3dp"
+            android:layout_marginTop="10dp"
+            android:fontFamily="sans-serif"
+            android:text="Hey there I am using app!!"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="8dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true">
+
+        <Button
+            android:id="@+id/sendrequestBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/hero_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Send Friend Request"
+            android:onClick="sendFriendRequest"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+
+        <Button
+            android:id="@+id/declinereqBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/hero_button"
+            android:backgroundTint="@color/colorPrimary"
+            android:onClick="declineFriendRequest"
+            android:fontFamily="sans-serif-smallcaps"
+            android:text="Decline Friend Request"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+
+
+</RelativeLayout>

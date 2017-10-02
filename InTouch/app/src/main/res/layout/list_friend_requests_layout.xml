@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:layout_marginTop="5dp"
+    android:layout_width="match_parent"
+    android:layout_height="125dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:weightSum="7"
+        android:padding="5dp"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="2">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/reqcard_user_pic"
+                android:layout_width="match_parent"
+                android:src="@drawable/defaultpic"
+                android:layout_height="match_parent" />
+            <ImageView
+                android:layout_width="25dp"
+                android:id="@+id/reqcardonline_status"
+                android:layout_height="25dp"
+                android:visibility="invisible"
+                android:src="@mipmap/online_icon"
+                android:layout_alignParentBottom="true"
+                android:layout_alignParentEnd="true" />
+
+        </RelativeLayout>
+
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="5"
+            android:weightSum="7"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/reqcard_user_name"
+                android:layout_height="0dp"
+                android:layout_weight="3"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingTop="10dp"
+                android:text="Gyan Singh"
+                android:textAlignment="center"
+                android:textSize="25sp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:id="@+id/reqcard_user_status"
+                android:layout_height="0dp"
+                android:layout_weight="2"
+                android:fontFamily="sans-serif-smallcaps"
+                android:paddingTop="5dp"
+                android:text="Hey there i am just fine"
+                android:textAlignment="center" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:orientation="horizontal"
+                android:layout_weight="2">
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="3dp"
+                    android:id="@+id/all_req_list_accpt_btn"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/colorAccent"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Accept"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+
+                <Button
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="3dp"
+                    android:id="@+id/all_req_list_dcln_btn"
+                    android:layout_weight="1"
+                    android:background="@drawable/rounded_corner"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:fontFamily="sans-serif-smallcaps"
+                    android:text="Decline"
+                    android:textAllCaps="false"
+                    android:textColor="@color/white" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
