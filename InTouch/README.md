@@ -83,7 +83,7 @@ $ cp google-services.json
 
 | All Requests at one place                | Signup Page                              | Login Page                               | All friends at one place                 |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| ![Request Fragment](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/showsAllTheRequests.png?raw=true) | ![Signup Activity](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/signupActivity.png?raw=true) | ![Login Activity](https://github.com/g0621/Android-Projects/blob/master/InTouch/LoginActivity.png?raw=true) | ![Friend Fragment](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/friendFrag.png?raw=true) |
+| ![Request Fragment](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/showsAllTheRequests.png?raw=true) | ![Signup Activity](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/signupActivity.png?raw=true) | ![Login Activity](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/LoginActivity.png?raw=true) | ![Friend Fragment](https://github.com/g0621/Android-Projects/blob/master/InTouch/Screenshots/friendFrag.png?raw=true) |
 
 
 
