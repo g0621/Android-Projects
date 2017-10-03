@@ -1,4 +1,4 @@
-package com.example.gyan.intouch.activities;
+﻿package com.example.gyan.intouch.activities;
 
 import android.content.Context;
 import android.content.Intent;
@@ -102,6 +102,8 @@ public class ChatActivity extends AppCompatActivity {
                         ChatMessege chatMessege = dataSnapshot.getValue(ChatMessege.class);
                         messegeList.add(chatMessege);
                         chatMessegeAdapter.notifyDataSetChanged();
+			recyclerView.smoothScrollToPosition(chatMessegeAdapter.getItemCount() - 1);
+
                     }
 
                     @Override
