@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:background="#ececec">
+    <LinearLayout
+        android:weightSum="6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <ImageView
+            android:layout_weight="1"
+            android:id="@+id/weatherIcon"
+            android:padding="7dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:src="@drawable/sunny_mini"/>
+        <LinearLayout
+            android:layout_weight="4"
+            android:gravity="center_vertical"
+            android:paddingLeft="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Tommorow"
+                android:textSize="23dp"
+                android:id="@+id/weatherDate"
+                android:textStyle="italic" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:text="clear"
+                android:textSize="18dp"
+                android:id="@+id/weatherDiscription"
+                android:textStyle="italic" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:gravity="right"
+            android:id="@+id/TempRatureCurrent"
+            android:paddingRight="5dp"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/tempMaxMum"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="30dp"
+                android:text="78°"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/tempMinMum"
+                android:layout_height="match_parent"
+                android:textSize="20dp"
+                android:text="64°"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+</android.support.v7.widget.CardView>
