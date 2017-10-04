@@ -13,6 +13,7 @@ A base code to implement more complex weather apps.
 - XML for layout implementation are given  [HERE](https://github.com/g0621/Android-Projects/blob/master/Weather%20App/src/main/res/layout/)
 - Source of MainActivity  given [HERE](https://github.com/g0621/Android-Projects/blob/master/Weather%20App/src/main/java/com/example/gyan/funshine/activities/WeatherActivity.java)
 - All the [drawable](https://github.com/g0621/Android-Projects/blob/master/Weather%20App/src/main/res/)  resources provided
+- [NOTE :](#) please replace the YOURAPPID in main activity with your openweather appid
 
 ------
 
