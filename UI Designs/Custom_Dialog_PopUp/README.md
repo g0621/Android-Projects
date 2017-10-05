@@ -20,7 +20,7 @@ A base code to implement in your apps.
 
 | Dialogue Box                             | Text Retrieval                           |
 | ---------------------------------------- | ---------------------------------------- |
-| ![Dialogue Box](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_Dialog_PopUp/Screenshot/popup.png?raw=true) | ![Text Retrieval]((https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_Dialog_PopUp/Screenshot/getbackresult.png?raw=true) |
+| ![Dialogue Box](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_Dialog_PopUp/Screenshot/popup.png?raw=true) | ![Text Retrieval](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_Dialog_PopUp/Screenshot/getbackresult.png?raw=true) |
 
 
 
