@@ -20,7 +20,11 @@ A base code to implement in your apps.
 
 | Start Screen                             | Custom toast                             |
 | ---------------------------------------- | ---------------------------------------- |
+<<<<<<< HEAD
 | ![Edit Text](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_toast/ScreenShots/startscreen.png?raw=true) | ![custom toast](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_toast/ScreenShots/custom_tost.png?raw=true) |
+=======
+| ![Edit Text](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_toast/ScreenShot/startscreen.png?raw=true) | ![Text Retrieval](https://github.com/g0621/Android-Projects/blob/master/UI%20Designs/Custom_toast/ScreenShot/custom_tost.png?raw=true) |
+>>>>>>> UIDesign Nested_Scroll_view
 
 
 
