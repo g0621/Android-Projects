@@ -20,7 +20,7 @@ A base code to implement in your games( lol joking 😜😜 ).
 
 | Game Load Screen                         | GamePlay Screen                          | GameOver Screen                          |
 | ---------------------------------------- | ---------------------------------------- | ---------------------------------------- |
-| ![Game Load Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/startscreen.png?raw=true) | ![Game Load Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/gameplay.png?raw=true) | ![Game Load Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/gamefinish.png?raw=true) |
+| ![Game Load Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/startscreen.png?raw=true) | ![Game Load Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/gameplay.png?raw=true) | ![Game Finish Screen](https://github.com/g0621/Android-Projects/blob/master/Brain_Trainer/ScreenShots/gamefinsih.png?raw=true) |
 
 
 
