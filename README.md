@@ -40,6 +40,7 @@ A base code to implement in your own Apps( **Yeah all assets too 🙂** ).
 | Custom_toast                     | Design your own toast get rid of ugly toast. |
 | Nested_Scroll_View               | Nested Scroll view like **saavan** App.  |
 | Loading_Screen_Animation         | How to implement loading screen animation. |
+| Custom Drawer                    | A custom style drawer implementation.    |
 
 
 
