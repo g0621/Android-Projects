@@ -42,6 +42,7 @@ A base code to implement in your own Apps( **Yeah all assets too 🙂** ).
 | Loading_Screen_Animation         | How to implement loading screen animation. |
 | Custom Drawer                    | A custom style drawer implementation.    |
 | Instagram_transition_login_bg    | A fading background animation like Instagram login page. |
+| Blur Image with seekBar          | How to set custom blur of image.         |
 
 
 
