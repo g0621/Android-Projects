@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:paddingTop="11dp"
+    android:background="#ffffff"
+    tools:context="com.example.gyan.echo.Fragments.SettingsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#212121"
+        android:layout_marginLeft="20dp"
+        android:text="Shake to change Song "
+        android:id="@+id/shaketochange"
+        android:textSize="17dp"/>
+
+    <Switch
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="16dp"
+        android:backgroundTint="#212121"
+        android:id="@+id/switchShake"/>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.8dp"
+        android:layout_margin="25dp"
+        android:layout_below="@id/shaketochange"
+        android:background="#bdbdbd"/>
+
+</RelativeLayout>

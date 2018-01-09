@@ -1,0 +1,48 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    android:background="@drawable/main_bg_anim"
+    tools:layout_editor_absoluteY="25dp"
+    app:layout_editor_absoluteX="0dp"
+    android:id="@+id/main_bg"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context="com.example.gyan.echo.Fragments.AboutUsFragment">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="60dp"
+        android:id="@+id/dev_pic"
+        android:src="@drawable/dev_pic"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="[-- Gyan Singh --]"
+        android:textStyle="bold"
+        android:id="@+id/dev_name"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:textSize="22sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="gyansingh1997@gmail.com"
+        android:id="@+id/dev_mail"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="+91 8107066370"
+        android:id="@+id/dev_phone"
+        android:textStyle="bold"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:textSize="18sp"/>
+
+</LinearLayout>
