@@ -28,6 +28,7 @@ A base code to implement in your own Apps( **Yeah all assets too 🙂** ).
 | InTouch                    | A social Networking ONE-ONE chat app using firebase(**Must Check**). |
 | Weather App                | A weather app to show 5 day forecast of your current location. |
 | UI Designs                 | Android Layout how-to's (*helpful for developers*) |
+| Echo Music Player          | Cool Music player with Favorite and visualization. |
 
 
 
