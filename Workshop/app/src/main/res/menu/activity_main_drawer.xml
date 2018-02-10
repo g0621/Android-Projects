@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item android:title="Learn">
+        <menu>
+            <item
+                android:id="@+id/nav_dashboard"
+                android:icon="@drawable/ic_dashboard_black_24dp"
+                android:title="DashBoard" />
+            <item
+                android:id="@+id/nav_allworkshops"
+                android:icon="@drawable/ic_library_books_black_24dp"
+                android:title="Catalogue" />
+        </menu>
+
+    </item>
+
+    <item android:title="Connect">
+        <menu>
+            <item
+                android:id="@+id/nav_login"
+                android:icon="@drawable/ic_check_black_24dp"
+                android:title="Login" />
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_exit_to_app_black_24dp"
+                android:title="Logout" />
+            <item
+                android:id="@+id/nav_signup"
+                android:icon="@drawable/ic_person_black_24dp"
+                android:title="Signup" />
+        </menu>
+    </item>
+
+</menu>

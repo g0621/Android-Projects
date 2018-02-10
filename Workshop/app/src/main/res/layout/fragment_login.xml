@@ -1,0 +1,63 @@
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/side_nav_bar"
+    tools:context="com.example.gyan.workshop.Fragments.Login">
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:orientation="vertical"
+        android:layout_centerInParent="true"
+        android:layout_height="match_parent">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:fontFamily="cursive"
+            android:textColor="#ffffff"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:layout_marginTop="50dp"
+            android:text="Workshop Login"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:orientation="vertical"
+            android:gravity="bottom"
+            android:paddingBottom="100dp"
+            android:layout_height="match_parent">
+            <EditText
+                android:id="@+id/login_email"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:padding="5dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/rounded_corner"
+                android:textColor="#ffffff"
+                android:inputType="textAutoComplete|textEmailAddress"/>
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:id="@+id/login_password"
+                android:padding="5dp"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/rounded_corner"
+                android:hint="Password"
+                android:textColor="#ffffff"
+                android:inputType="textPassword"/>
+            <Button
+                android:id="@+id/login_button"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/rounded_corner"
+                android:backgroundTint="@color/colorPrimary"
+                android:text="Login"
+                android:textAllCaps="false"/>
+        </LinearLayout>
+    </LinearLayout>
+
+</RelativeLayout>
