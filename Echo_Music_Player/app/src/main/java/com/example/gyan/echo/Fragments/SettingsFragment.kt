@@ -26,11 +26,11 @@ class SettingsFragment : Fragment() {
         var MY_PREF_NAME = "ShakeFeature"
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         var view =  inflater!!.inflate(R.layout.fragment_settings, container, false)
-        activity.title = "Settings"
+        activity!!.title = "Settings"
         switch = view?.findViewById(R.id.switchShake)
         return view
     }

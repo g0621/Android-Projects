@@ -41,12 +41,12 @@ class MainScreenFragment : Fragment() {
         var mediaPlayer: MediaPlayer? = null
     }
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         val view =  inflater!!.inflate(R.layout.fragment_main_screen, container, false)
         setHasOptionsMenu(true)
-        activity.title = "All Songs"
+        activity!!.title = "All Songs"
         visibleLayout = view?.findViewById(R.id.visible_layout)
         playPauseButton = view?.findViewById(R.id.play_pause_button)
         songTitle = view?.findViewById(R.id.songTitleMainScreen)
@@ -59,7 +59,7 @@ class MainScreenFragment : Fragment() {
     override fun onActivityCreated(savedInstanceState: Bundle?) {
         super.onActivityCreated(savedInstanceState)
         getSongsList = getSongsFromPhone()
-        val pref = activity.getSharedPreferences("action_sort",Context.MODE_PRIVATE)
+        val pref = activity!!.getSharedPreferences("action_sort",Context.MODE_PRIVATE)
         val action_sort_asec = pref.getString("action_sort_asec","true")
         val action_sort_recent = pref.getString("action_sort_recent","false")
         if (getSongsList == null){
@@ -179,7 +179,7 @@ class MainScreenFragment : Fragment() {
             args.putParcelableArrayList("songData",SongPlayingFragment.Statified.fetchSongs)
             args.putString("MainBottomBar","success")
             songPlayingFrag.arguments = args
-            fragmentManager.beginTransaction()
+            fragmentManager!!.beginTransaction()
                     .replace(R.id.details_fragment,songPlayingFrag)
                     .addToBackStack("SongPlayingFragment")
                     .commit()

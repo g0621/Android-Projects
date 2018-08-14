@@ -49,11 +49,11 @@ class FavoriteFragmnet : Fragment() {
 
 
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         var view = inflater!!.inflate(R.layout.fragment_favorite_fragmnet, container, false)
-        activity.title = "Favorites"
+        activity!!.title = "Favorites"
         noFavoriate = view?.findViewById(R.id.noFavorites)
         nowPlayingBottomBar = view?.findViewById(R.id.hiddenBarFavScreen)
         songTitle = view?.findViewById(R.id.songTitleFavScreen)
@@ -148,7 +148,7 @@ class FavoriteFragmnet : Fragment() {
             args.putParcelableArrayList("songData",SongPlayingFragment.Statified.fetchSongs)
             args.putString("FavBottomBar","success")
             songPlayingFrag.arguments = args
-            fragmentManager.beginTransaction()
+            fragmentManager!!.beginTransaction()
                     .replace(R.id.details_fragment,songPlayingFrag)
                     .addToBackStack("SongPlayingFragment")
                     .commit()

@@ -26,7 +26,7 @@ class NavigationDrawerAdapter(_contentList: ArrayList<String>,_getImages: IntArr
         this.mContext = context
     }
 
-    override fun onBindViewHolder(holder: NavViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: NavViewHolder, position: Int) {
         holder?.text_GET?.setText(contentList?.get(position))
         holder?.icon_GET?.setBackgroundResource(getImage?.get(position) as Int)
         holder?.content_GET?.setOnClickListener({
@@ -63,7 +63,7 @@ class NavigationDrawerAdapter(_contentList: ArrayList<String>,_getImages: IntArr
         })
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): NavViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): NavViewHolder {
         var itemView = LayoutInflater.from(parent?.context)
                 .inflate(R.layout.row_custom_navigation_drawer,parent,false)
         val returnThis = NavViewHolder(itemView)
@@ -74,7 +74,7 @@ class NavigationDrawerAdapter(_contentList: ArrayList<String>,_getImages: IntArr
         return contentList?.size as Int
     }
 
-    class NavViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView){
+    class NavViewHolder(itemView: View?) : RecyclerView.ViewHolder(itemView!!){
         var icon_GET: ImageView?= null
         var text_GET: TextView?= null
         var content_GET: RelativeLayout?= null

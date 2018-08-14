@@ -16,6 +16,7 @@ Echo  is a open source social music player templet.
   - **Notification channel** on Oreo for current music.
   - **Push Notification** for current playing song.
   - Build over **Kotlin** match with industry standards.
+  - **UPDATED codebase to support SDK 28**
 
 
 You can also:

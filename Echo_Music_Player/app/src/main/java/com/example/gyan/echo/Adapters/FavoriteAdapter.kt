@@ -22,7 +22,7 @@ class FavoriteAdapter (_songDetails: ArrayList<Songs>, _context: Context): Recyc
         else return (songsDetails as ArrayList<Songs>).size
     }
 
-    override fun onBindViewHolder(holder: MyViewHolder?, position: Int) {
+    override fun onBindViewHolder(holder: MyViewHolder, position: Int) {
         val songObject = songsDetails?.get(position)
         holder?.trackTitle?.text = songObject?.songTitle
         holder?.trackArtist?.text = songObject?.Artist
@@ -44,7 +44,7 @@ class FavoriteAdapter (_songDetails: ArrayList<Songs>, _context: Context): Recyc
         })
     }
 
-    override fun onCreateViewHolder(parent: ViewGroup?, viewType: Int): MyViewHolder {
+    override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): MyViewHolder {
         val itemView = LayoutInflater.from(parent?.context)
                 .inflate(R.layout.row_custom_mainscreen_adapter,parent,false)
         return MyViewHolder(itemView)

@@ -3,7 +3,7 @@ package com.example.gyan.echo
 /**
  * Created by Gyan on 1/2/2018.
  */
-class CurrentSongHelper{
+class CurrentSongHelper {
     var songArtist: String? = null
     var songTitle: String? = null
     var songPath: String? = null
@@ -13,7 +13,6 @@ class CurrentSongHelper{
     var isLoop: Boolean = false
     var isShuffle: Boolean = false
     var trackPosition: Int = 0
-
 
 
 }

@@ -27,11 +27,11 @@ class AboutUsFragment : Fragment() {
     var main_bg: LinearLayout? = null
     var animationDrawable: AnimationDrawable? = null
 
-    override fun onCreateView(inflater: LayoutInflater?, container: ViewGroup?,
+    override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?,
                               savedInstanceState: Bundle?): View? {
         // Inflate the layout for this fragment
         var view =  inflater!!.inflate(R.layout.fragment_about_us, container, false)
-        activity.title = "About Us"
+        activity!!.title = "About Us"
         dev_Image = view?.findViewById(R.id.dev_pic)
         dev_name = view?.findViewById(R.id.dev_name)
         dev_mail = view?.findViewById(R.id.dev_mail)
